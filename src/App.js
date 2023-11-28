@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import Experience from "./pages/Experience"
 import Projects from "./pages/Projects"
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 function App() {
   
