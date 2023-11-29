@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ReorderIcon from '@material-ui/icons'
+import ReorderIcon from '@mui/icons-material/Reorder';
 
 function NavBar() {
   return (
