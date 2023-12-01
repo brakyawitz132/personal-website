@@ -1,8 +1,19 @@
 import React from 'react'
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+
 
 function Footer() {
   return (
-    <div>Adding links to my socials such as Instagram, LinkedIn, GitHub, etc.</div>
+    <div>
+        <div> 
+            <LinkedInIcon />
+            <InstagramIcon />
+            <FacebookIcon />
+        </div>
+        <p> &copy; 2023 Jacob Park</p>
+    </div>
   )
 }
 
