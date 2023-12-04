@@ -6,13 +6,13 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Footer() {
   return (
-    <div class="w-full h-200 bg-blue-900 flex justify-center items-center flex-col pt-10 mt-200">
-        <div class="text-white m-2 text-4xl cursor-pointer"> 
-            <LinkedInIcon />
-            <InstagramIcon />
-            <FacebookIcon />
+    <div className="w-full h-200 bg-blue-900 flex justify-center items-center flex-col pt-10 mt-200">
+        <div className="text-white m-2 text-4xl cursor-pointer"> 
+            <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/jacob-y-park/', '_blank')}/>
+            <InstagramIcon onClick={() => window.open('https://www.instagram.com/jacobypark17/', '_blank')}/>
+            <FacebookIcon onClick={() => window.open('https://www.facebook.com/jacob.park.75/', '_blank')}/>
         </div>
-        <p class="text-white"> &copy; 2023 Jacob Park</p>
+        <p className="text-white"> &copy; 2023 Jacob Park</p>
     </div>
   )
 }
