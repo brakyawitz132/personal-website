@@ -3,7 +3,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Button, IconButton } from '@mui/material';
-import Resume from '../assets/files/resume.pdf'
+import Resume from '../assets/files/resume2.pdf'
 
 function Home() {
   return (
