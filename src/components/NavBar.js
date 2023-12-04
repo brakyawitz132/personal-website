@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ReorderIcon from '@mui/icons-material/Reorder'
+import "../styles/Navbar.css"
 
 function NavBar() {
     const [expandNavbar, setExpandNavbar] = useState(false)
@@ -12,14 +13,14 @@ function NavBar() {
     }, [location])
 
     return (
-        <div className='bg-gray-800 text-white p-4'>
+        <div className='navbar bg-gray-800 text-white p-4' id={expandNavbar ? "open" : "close"}>
             <div className="w-full h-100 flex items-center justify-end">
-                <button className='lg:hidden focus:outline-none'
+                <button className='sm:hidden focus:outline-none'
                 onClick={() => setExpandNavbar((prev) => !prev)}>
                     <ReorderIcon className='w-6 h-6 fill-current'/> 
                 </button>
             </div>
-            <div className="hidden lg:flex items-center space-x-4">
+            <div id="links" className="hidden lg:flex text-center space-x-4">
                 <Link to="/" className=" hover:text-gray-300">
                     Home
                 </Link>

@@ -13,14 +13,14 @@ function Home() {
         <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"> My Name is Jacob Park</h2>
         <div className="mb-4">
             <p className="mt-20 text-lg leading-8 text-gray-600">A full stack software engineer with a passion for learning and creating.</p>
-            <IconButton>
-                <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/jacob-y-park/', '_blank')}/>
+            <IconButton onClick={() => window.open('https://www.linkedin.com/in/jacob-y-park/', '_blank')}>
+                <LinkedInIcon />
             </IconButton>
-            <IconButton>
+            <IconButton href={`mailto:jacobypark122@gmail.com`} target='_top'>
                 <EmailIcon />
             </IconButton>
-            <IconButton>
-                <GitHubIcon onClick={() => window.open('https://github.com/brakyawitz132', '_blank')}/>
+            <IconButton onClick={() => window.open('https://github.com/brakyawitz132', '_blank')}>
+                <GitHubIcon />
             </IconButton>
         </div>
         <a href={Resume} download="Jacob Park Resume">

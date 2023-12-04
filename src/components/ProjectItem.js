@@ -6,13 +6,13 @@ function ProjectItem({ image, name, id }) {
   console.log(image)
   return (
     <div
-      className="projectItem"
+      className="border rounded-lg overflow-hidden shadow-md w-300 h-300 m-40 text-center projectItem"
       onClick={() => {
         navigate("/project/" + id);
       }}
     >
       <div style={{backgroundImage: `url(${image})`}}
-      className="rounded-tl-3xl rounded-tr-3xl w-full h-200 bg-center bg-no-repeat bg-cover" />
+      className="rounded-tl-lg rounded-tr-lg w-full h-200 bg-center bg-no-repeat bg-cover bgImage cursor-pointer" />
       <h1 className="text-2xl"> {name} </h1>
     </div>
   );

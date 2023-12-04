@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Footer() {
   return (
-    <div className="w-full h-200 bg-blue-900 flex justify-center items-center flex-col pt-10 mt-200">
+    <div className="w-full h-200 bg-gray-800 flex justify-center items-center flex-col pt-10 mt-200">
         <div className="text-white m-2 text-4xl cursor-pointer"> 
             <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/jacob-y-park/', '_blank')}/>
             <InstagramIcon onClick={() => window.open('https://www.instagram.com/jacobypark17/', '_blank')}/>
