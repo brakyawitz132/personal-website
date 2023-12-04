@@ -12,14 +12,23 @@ function NavBar() {
     }, [location])
 
     return (
-        <div className='navbar'>
-            <div className='toggle_button'>
-                <button onClick={() => setExpandNavbar((prev) => !prev)}> <ReorderIcon /> </button>
+        <div className='bg-gray-800 text-white p-4'>
+            <div class="w-full h-100 flex items-center justify-end">
+                <button className='lg:hidden focus:outline-none'
+                onClick={() => setExpandNavbar((prev) => !prev)}>
+                    <ReorderIcon className='w-6 h-6 fill-current'/> 
+                </button>
             </div>
-            <div className='links'>
-                <Link to='/'> Home </Link>
-                <Link to='/projects'> Projects </Link>
-                <Link to='/experience'> Experience </Link>
+            <div className="hidden lg:flex items-center space-x-4">
+                <Link to="/" className="hover:text-gray-300">
+                    Home
+                </Link>
+                <Link to="/projects" className="hover:text-gray-300">
+                    Projects
+                </Link>
+                <Link to="/experience" className="hover:text-gray-300">
+                    Experience
+                </Link>
             </div>
         </div>
     )
