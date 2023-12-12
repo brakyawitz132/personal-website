@@ -4,15 +4,17 @@ import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Button, IconButton } from '@mui/material';
 import Resume from '../assets/files/resume2.pdf'
+import Logo from '../assets/logo1.png'
 
 function Home() {
   return (
-    <div className="md:flex-row md:justify-between items-center p-8">
+    <div className="md:flex-row md:justify-center items-center p-8">
       <div className="text-center mb-20 mt-20">
         <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"> Hello, World!</h2>
-        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"> My Name is Jacob Park</h2>
+        <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"> My Name is</h2>
+        <img src={Logo} alt='logo' className='mx-auto block py-8'/>
         <div className="mb-4">
-            <p className="mt-20 text-lg leading-8 text-gray-600">A full stack software engineer with a passion for learning and creating.</p>
+            <p className="mt-4 text-lg leading-8 text-gray-600">A full stack software engineer with a passion for learning and creating.</p>
             <IconButton onClick={() => window.open('https://www.linkedin.com/in/jacob-y-park/', '_blank')}>
                 <LinkedInIcon />
             </IconButton>

@@ -11,7 +11,7 @@ function Projects() {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
         {ProjectList.map((project, idx) => (
-          <ProjectItem key={idx} id={idx} name={project.name} image={project.image} />
+          <ProjectItem key={idx} id={idx} name={project.name} image={project.image} body={project.body}/>
         ))}
       </div>
     </div>

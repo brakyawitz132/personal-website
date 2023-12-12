@@ -12,6 +12,7 @@ function ProjectDisplay() {
     <div className="w-full h-[calc(100vh-100px)] flex justify-center items-center flex-col">
       <h1 className="mt-8 text-gray-800 text-3xl"> {project.name}</h1>
       <img className="w-96 rounded-lg" src={project.image} alt={project.name}/>
+      <p className="mx-24 my-5 text-2xl text-gray-800">{project.body}</p>
       <p className="text-2xl text-gray-800">
         <b>Skills:</b> {project.skills}
       </p>

@@ -24,6 +24,9 @@ function NavBar() {
                 <Link to="/" className=" hover:text-gray-300">
                     Home
                 </Link>
+                <Link to="/about" className=" hover:text-gray-300">
+                    About
+                </Link>
                 <Link to="/projects" className=" hover:text-gray-300">
                     Projects
                 </Link>
